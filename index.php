@@ -18,8 +18,8 @@
   <body>
     <div class="jumbotron cs-jumbotron">
       <div class="container">
-       <h1>Hitung Ongkos Kirim Paket</h1>
-       <p>Kirim Paket Se Indonesia</p>
+        <h1>Hitung Ongkos Kirim Paket</h1>
+        <p>Kirim Paket Se Indonesia</p>
       </div>
     </div>
     
@@ -28,10 +28,10 @@
       <div class="row">
     
         <!-- Awal Data Asal -->
-          <!-- Memulai mengambil daftar nama provinsi di indonesia -->
+        <!-- Memulai mengambil daftar nama provinsi di indonesia -->
         <div class="col-md-3">     
           <?php  
-             include("rajaongkir/provinsi_asal.php");
+            include("rajaongkir/provinsi_asal.php");
           ?>
         </div> 
         <br>
@@ -53,7 +53,6 @@
 
         <div class="col-md-2">
           <!-- Jenis Layanan Pengiriman -->
-         
             <label>Layanan</label>
               <select class="form-control" name="kurir" id="kurir">
                 <!-- <option value="all">semua</option> -->
@@ -69,7 +68,6 @@
         </div>
       </div> <!-- Batas Akhir Row Pertama -->
 
-        
       <div class="row">
         <div class="col-md-3">
           <?php 
@@ -83,7 +81,7 @@
               <option>Kabupaten</option>
             </select>   
         </div> 
-         <div class="col-md-2">
+        <div class="col-md-2">
           <label>Kode Pos</label>
           <div id="pos_tujuan">
             <input type="text" class="form-control" name="" readonly>
@@ -95,10 +93,9 @@
         </div>    
       </div>
     </div>
-     
-     
+  
     <div class="container konten2">
-    	<h3>Detail Ongkos Kirim</h3>
+      <h3>Detail Ongkos Kirim</h3>
       <table class="table table-hover">
         <thead>
         <tr>
@@ -112,12 +109,10 @@
         <tbody id="ongkir"></tbody>
       </table>  
     </div>
-
   </body>
 </html>
 
 <script type="text/javascript">
-   
   $(document).ready(function(){
     $('#provinsiasal').change(function(){
       // Mengambil provinsi asal yang tadi di pilih
